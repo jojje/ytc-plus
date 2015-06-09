@@ -4,7 +4,9 @@
 // @description Fetches all comments and allows for inverting the sorting order
 // @require     http://code.jquery.com/jquery-1.9.1.min.js
 // @include     https://www.youtube.com/watch?v=*
-// @version     1
+// @downloadURL https://raw.githubusercontent.com/jojje/ytc-plus/master/youtube_comments_plus.js
+// @updateURL   https://raw.githubusercontent.com/jojje/ytc-plus/master/youtube_comments_plus.js
+// @version     1.0
 // @grant       none
 // ==/UserScript==
 
