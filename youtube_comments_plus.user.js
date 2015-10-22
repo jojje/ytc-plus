@@ -8,11 +8,11 @@
 // @updateURL   https://raw.githubusercontent.com/jojje/ytc-plus/master/youtube_comments_plus.user.js
 // @homepageURL https://github.com/jojje/ytc-plus
 // @author      jojje
-// @version     1.0
+// @version     1.0.1
 // @grant       none
 // ==/UserScript==
 
-var anchorFilter = '#yt-comments-order-button';
+var anchorFilter = '.comments-order-menu';
 var state = "idle";
 
 //==============================================
@@ -134,7 +134,7 @@ function addUI() {
     ' #f-bar      { height:1.5em; background-color:#99ff99; width:50%; }'+
     '</style>').appendTo('body');
 
-  $('<div id="c-fetchall">').insertAfter('#yt-comments-order-button');
+  $('<div id="c-fetchall">').insertAfter(anchorFilter);
   
   $('<button id="b-sort" class="yt-uix-button yt-uix-button-default" title="Reverse the comment sorting order"><span>Reverse</span></button>')
   .appendTo('#c-fetchall');
@@ -177,6 +177,3 @@ onReady(function() {
   addListeners();
   log('yt enhancement initialized');
 });
-
-
-
